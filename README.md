@@ -1,9 +1,5 @@
 # Full Stack Development Q&A & Problem Solving Guide
 
-এই README ফাইলটি তৈরি করা হয়েছে **Node.js, Express.js, React.js, Next.js, MongoDB + Mongoose, এবং Prisma** শেখার জন্য। এখানে **Q&A এবং live code examples** রয়েছে যা প্র্যাকটিস এবং রেফারেন্সের জন্য খুব উপযোগী।
-
----
-
 ## 1. Node.js (30 Q&A + 10 Problem Solving)
 
 **Focus:** Backend runtime, server-side JS  
