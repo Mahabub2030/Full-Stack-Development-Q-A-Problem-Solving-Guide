@@ -1,0 +1,17 @@
+import cors from "cors";
+import express, { Request, Response } from "express";
+import routes from "./routes";
+
+export const app = express();
+
+app.use([cors(), express.json()]);
+
+//routes
+app.use(routes);
+
+app.get("/", (req: Request, res: Response) => {
+  res.send({
+    success: true,
+    message: "This is Library Management API",
+  });
+});
