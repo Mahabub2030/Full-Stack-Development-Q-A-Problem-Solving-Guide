@@ -1,8 +1,8 @@
 # Full Stack Development Q&A & Problem Solving Guide
 
-html & css 30 interview questions
+html & css 20 interview questions
 
-```base
+````base
 
 # 1.what is html?
 
@@ -17,8 +17,122 @@ html & css 30 interview questions
 
 <section> → semantic, represents a meaningful section of content
 
+**Example:**
+```html
+<div class="container"></div>
+<section>
+  <h2>About Us</h2>
+  <p>Information about the company.</p>
+</section>
 
-```
+4. What are common HTML5 form input types?
+Answer: text, password, email, number, date, checkbox, radio, file, submit, tel, url, color, range.
+
+5. How do you make a form input required?
+Answer: Use the required attribute:
+<input type="text" required>
+
+6. Difference between <ul>, <ol>, and <dl>?
+Answer:
+<ul> → unordered list
+<ol> → ordered list
+<dl> → description list (<dt> = term, <dd> = description)
+
+7. Difference between id and class in CSS?
+Answer:
+id → unique element (#id {})
+class → reusable style (.class {})
+
+8. What is CSS specificity?
+Answer: Specificity determines which CSS rule applies. Order: Inline > ID > Class > Element.
+#menu {}  /* highest */
+.nav {}    /* lower */
+div {}     /* lowest *
+
+9. What are pseudo-classes in CSS?
+Answer: Pseudo-classes style elements in a specific state. Examples: :hover, :focus, :first-child, :nth-child(2).
+
+10. Difference between relative, absolute, fixed, and sticky positioning?
+Answer:
+relative → relative to normal position
+absolute → relative to nearest positioned ancestor
+fixed → stays fixed on viewport
+sticky → toggles between relative and fixed based on scroll
+
+11. What is Flexbox in CSS?
+Answer: Flexbox is a layout model for arranging items in a row or column with alignment and space distribution.
+
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+12. Flexbox properties for container and items?
+Answer:
+Container: display, flex-direction, justify-content, align-items, flex-wrap
+Items: flex, align-self, order
+
+13. What is CSS Grid?
+Answer: Grid is a 2D layout system for rows and columns.
+.container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 10px;
+}
+
+14. What are media queries?
+Answer: Media queries apply styles based on device width or features.
+@media (max-width: 768px) {
+  body { font-size: 14px; }
+}
+
+15. How to make an image responsive?
+Answer:
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+16.How to include a Google Font?
+Answer:
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+17. Difference between inline, block, and inline-block?
+Answer:
+inline → no line break, ignores width/height
+block → full-width, line break
+inline-block → inline but respects width/height
+
+18. What are CSS transitions?
+Answer: Animate property changes over time.
+button {
+  transition: background 0.3s;
+}
+button:hover {
+  background: blue;
+}
+
+19. How to create a CSS animation?
+Answer:
+@keyframes slide {
+  from { transform: translateX(0); }
+  to { transform: translateX(100px); }
+}
+.box {
+  animation: slide 2s infinite alternate;
+}
+
+20. Difference between em, rem, %, and px?
+Answer:
+px → fixed pixels
+% → relative to parent
+em → relative to parent font size
+rem → relative to root font size
+
+
+````
 
 ## 1. Node.js (30 Q&A + 10 Problem Solving)
 
