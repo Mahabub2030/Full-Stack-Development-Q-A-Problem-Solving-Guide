@@ -145,7 +145,119 @@ var: function-scoped, can be redeclared, hoisted
 let: block-scoped, cannot be redeclared, hoisted but  not initialized.
 const: block-scoped, cannot be redeclared or reassigned
 
+2. What are the data types in JavaScript?
+Answer:
+* Primitive:string ,number ,boolean,null ,undefined,symbol,bigint.
+* Non-primitive:object,array,function.
 
+3.What are the coercion in js?
+Answer:Autonatic conversion between types.
+console.log('5' - 2); // 3 (string to number)
+console.log('5' + 2); // '52' (number to string)
+
+4. Difference between == and ===?
+* ==: checks value after type coercion
+* ===: checks value and type strictly
+
+
+5. How do you declare a template literal?
+let name = "Mahabub";
+console.log(`Hello, ${name}!`);
+
+
+6. Difference between function declaration and expression?
+Declaration: hoisted, can be called before definition
+function sum(a,b){return a+b;}
+
+
+7. What is an arrow function?
+Concise syntax, no this binding:
+const add = (a,b) => a + b;
+
+8. What is a callback function?
+A function passed as an argument to another function:
+function greet(name, callback){
+    callback(name);
+}
+greet('Mahabub', name => console.log(`Hello ${name}`));
+
+9. What are default parameters?
+function greet(name="Guest"){
+    console.log(`Hello ${name}`);
+}
+
+10. What is rest and spread operator?
+
+*Rest: collects multiple arguments into an array
+function sum(...nums){ return nums.reduce((a,b)=>a+b,0); }
+*Spread: expands an array/object
+
+let arr1=[1,2]; let arr2=[...arr1,3,4]; // [1,2,3,4]
+
+
+11. Difference between map, filter, and reduce?
+map → transforms array
+filter → returns filtered array
+reduce → reduces array to single value
+
+12. How to find an element in an array?
+[1,2,3].find(el => el>1); // 2
+
+
+13. Difference between forEach and map?
+forEach: executes a function, returns undefined
+map: executes a function, returns new array
+
+14. How to remove duplicates from an array?
+let arr = [1,1,2,3];
+let unique = [...new Set(arr)]; // [1,2,3]
+
+15. How to check if a variable is an array?
+Array.isArray(arr);
+
+16. How to destructure an object?
+const person = {name:"Mahabub", age:25};
+const {name, age} = person;
+
+
+17. How to clone an object?
+let clone = {...person};
+
+18. What is optional chaining?
+Safely access nested properties:
+console.log(person?.address?.city);
+
+19. Difference between for...in and for...of?
+for...in: iterates object keys
+for...of: iterates iterable values (array, string)
+
+20. How to merge objects?
+let obj1={a:1}, obj2={b:2};
+let merged = {...obj1, ...obj2}; // {a:1,b:2}
+```
+
+## DOM and Events
+
+```
+21. How to select an element in JS?
+document.getElementById('id')
+document.querySelector('.class')
+document.querySelectorAll('div')
+
+22. How to add an event listener?
+element.addEventListener('click', () => console.log('clicked'));
+
+
+23. What is event delegation?
+Attaching one event to a parent to handle children:
+document.getElementById('list').addEventListener('click', e => {
+    if(e.target.tagName==='LI') console.log(e.target.textContent);
+});
+24. How to change element content?
+document.getElementById('demo').textContent = "Hello";
+
+25. How to change element style?
+element.style.color = "red";
 
 ```
 
