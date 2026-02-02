@@ -141,9 +141,9 @@ Variables and Data Types
 
 1. Difference between var, let, and const?
 
-- var: function-scoped, can be redeclared, hoisted
-- let: block-scoped, cannot be redeclared, hoisted but  not initialized
- - const: block-scoped, cannot be redeclared or reassigned
+var: function-scoped, can be redeclared, hoisted
+let: block-scoped, cannot be redeclared, hoisted but  not initialized.
+const: block-scoped, cannot be redeclared or reassigned
 
 
 
