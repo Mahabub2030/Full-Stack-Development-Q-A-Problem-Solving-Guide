@@ -134,6 +134,21 @@ rem → relative to root font size
 
 ````
 
+## 2.JavaScript (60 Q&A + 20 Problem Solving)
+
+```
+Variables and Data Types
+
+1. Difference between var, let, and const?
+
+- var: function-scoped, can be redeclared, hoisted
+- let: block-scoped, cannot be redeclared, hoisted but  not initialized
+ - const: block-scoped, cannot be redeclared or reassigned
+
+
+
+```
+
 ## 1. Node.js (30 Q&A + 10 Problem Solving)
 
 **Focus:** Backend runtime, server-side JS
