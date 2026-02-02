@@ -1,8 +1,28 @@
 # Full Stack Development Q&A & Problem Solving Guide
 
+html & css 30 interview questions
+
+```base
+
+# 1.what is html?
+
+## Ans: html (hper text markup language) is used to structure content on the web elements like headings,paragraphs,links,images and forms.
+
+*2.what are semantic elements in html?
+##Ans: semantic elements clearly describe their meaning in a human and machine-readable way.Examples of semantic elements include <header>,<footer>,<article>,<section>,<nav> etc.
+
+3. Difference between <div> and <section>?
+
+##Ans: <div> → non-semantic, used for styling/layout
+
+<section> → semantic, represents a meaningful section of content
+
+
+```
+
 ## 1. Node.js (30 Q&A + 10 Problem Solving)
 
-**Focus:** Backend runtime, server-side JS  
+**Focus:** Backend runtime, server-side JS
 **Key Points:** Event loop, modules, HTTP, file system, asynchronous programming
 
 ### **Top Questions (বাংলায়)**
@@ -16,7 +36,7 @@
 7. Module Types: CommonJS vs ES Modules
 8. require vs import পার্থক্য
 9. process object কী?
-10. Buffer ও Stream ব্যাখ্যা  
+10. Buffer ও Stream ব্যাখ্যা
     ... _(30 পর্যন্ত)_
 
 ### **10 Problem Solving Examples**
@@ -32,7 +52,7 @@
 
 ## 2. Express.js (30 Q&A + 10 Problem Solving)
 
-**Focus:** Node.js web framework  
+**Focus:** Node.js web framework
 **Key Points:** Routing, middleware, request & response, REST API
 
 ### **Top Questions (বাংলায়)**
@@ -46,7 +66,7 @@
 7. Static files serve কিভাবে?
 8. JSON data parse কিভাবে?
 9. Router module কী?
-10. Error handling middleware কিভাবে?  
+10. Error handling middleware কিভাবে?
     ... _(30 পর্যন্ত)_
 
 ### **10 Problem Solving Examples**
@@ -63,7 +83,7 @@
 
 ## 3. React.js (30 Q&A + 10 Problem Solving)
 
-**Focus:** Frontend UI library  
+**Focus:** Frontend UI library
 **Key Points:** JSX, components, props, state, hooks, router, portals
 
 ### **Top Questions (বাংলায়)**
@@ -77,7 +97,7 @@
 7. Conditional rendering
 8. List rendering & key prop
 9. React Router কী?
-10. Error boundaries, portals  
+10. Error boundaries, portals
     ... _(30 পর্যন্ত)_
 
 ### **10 Problem Solving Examples**
@@ -97,7 +117,7 @@
 
 ## 4. Next.js (50 Q&A + 10 Problem Solving)
 
-**Focus:** React framework for SSR & SSG  
+**Focus:** React framework for SSR & SSG
 **Key Points:** Pages, routing, dynamic routes, API routes, getStaticProps, getServerSideProps, ISR, next/image, next/head, middleware
 
 ### **Top Questions (বাংলায়)**
@@ -111,7 +131,7 @@
 7. next/link, next/router
 8. next/image, next/head
 9. ISR & Middleware
-10. Redirects, Rewrites, Deployment optimization  
+10. Redirects, Rewrites, Deployment optimization
     ... _(50 পর্যন্ত)_
 
 ### **10 Problem Solving Examples**
@@ -131,7 +151,7 @@
 
 ## 5. MongoDB + Mongoose (20 Q&A + 10 Problem Solving)
 
-**Focus:** NoSQL DB, schema, CRUD  
+**Focus:** NoSQL DB, schema, CRUD
 **Key Points:** Database, collection, document, CRUD queries, Mongoose schema, model, validation, middleware, relations, population
 
 ### **Top Questions (বাংলায়)**
@@ -145,7 +165,7 @@
 7. Model ব্যাখ্যা (Q7)
 8. Validation & Middleware
 9. Population কী?
-10. ObjectId, find(), findOne()  
+10. ObjectId, find(), findOne()
     ... _(20 পর্যন্ত)_
 
 ### **10 Problem Solving Examples**
@@ -162,7 +182,7 @@
 
 ## 6. Prisma (30 Q&A + 10 Problem Solving)
 
-**Focus:** Type-safe ORM for SQL/NoSQL  
+**Focus:** Type-safe ORM for SQL/NoSQL
 **Key Points:** Prisma client, schema, models, CRUD, relations, transactions, upsert, aggregate, groupBy, migrations, raw queries
 
 ### **Top Questions (বাংলায়)**
@@ -176,7 +196,7 @@
 7. Soft Delete
 8. Migrations, Generate client
 9. Raw queries
-10. Nested writes, include, select  
+10. Nested writes, include, select
     ... _(30 পর্যন্ত)_
 
 ### **10 Problem Solving Examples**
@@ -216,6 +236,10 @@
 
 ---
 
-**Author:** Mahabub Alam  
-**Date:** 2026-01-29  
-**Purpose:** Full Stack Q&A & Problem Solving Guide (বাংলায়)
+**Author:** Mahabub Alam
+**Date:** 2026-01-29
+**Purpose:** Full Stack Q&A & Problem Solving Guide
+
+```
+
+```
