@@ -259,6 +259,16 @@ document.getElementById('demo').textContent = "Hello";
 25. How to change element style?
 element.style.color = "red";
 
+26.var, let, এবং const-এর মধ্যে পার্থক্য কী?
+উত্তর: var হলো পুরনো (Function scoped), let এবং const আধুনিক (Block scoped)। const-এর মান পরিবর্তন করা যায় না।
+
+**বাস্তব উদাহরণ: var হলো পাড়ার ক্লাব (সবাই ব্যবহার করতে পারে), let হলো আপনার নিজের ঘর, আর const হলো আপনার জন্মতারিখ (যা বদলানো যায় না)।
+
+27.Hoisting কী?
+
+উত্তর: ডিক্লারেশনের আগে ভেরিয়েবল ব্যবহার করার ক্ষমতা। JS কম্পাইল করার সময় ডিক্লারেশনগুলোকে উপরে তুলে নেয়।
+
+বাস্তব উদাহরণ: ক্লাসে শিক্ষক আসার আগেই কোনো ছাত্রের হাত তুলে রাখা যে সে উত্তর জানে।
 ```
 
 ## 1. Node.js (30 Q&A + 10 Problem Solving)
