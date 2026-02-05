@@ -28,6 +28,25 @@ Bn: একই এলিমেন্টে একাধিক স্টাইল 
 En: Used to define a special state of an element (e.g., :hover, :active).
 Bn: এলিমেন্টের বিশেষ অবস্থা বোঝাতে ব্যবহৃত হয়, যেমন মাউস হোভার করা।
 
+* Difference between display: none and visibility: hidden?
+En: display: none removes the element from the layout; visibility: hidden hides it but keeps the space.
+Bn: display: none এলিমেন্টটিকে লেআউট থেকে সরিয়ে ফেলে, কিন্তু visibility: hidden শুধুমাত্র অদৃশ্য করে, জায়গাটি দখল করে রাখে।
+
+* What is Z-index?
+
+En: Controls the stack order of elements (which one is on top).
+Bn: এলিমেন্টগুলো একটির ওপর আরেকটি থাকলে কোনটি উপরে থাকবে তা নির্ধারণ করে।
+
+* What are Media Queries?
+
+En: Used to create responsive designs for different screen sizes.
+Bn: বিভিন্ন স্ক্রিন সাইজের জন্য রেসপন্সিভ ডিজাইন তৈরি করতে এটি ব্যবহৃত হয়।
+
+** Explain CSS Flexbox.
+
+En: A layout model for providing an easy way to align and distribute space among items in a container.
+Bn: এটি কন্টেইনারের ভেতর এলিমেন্টগুলোকে সহজে সাজাতে এবং অ্যালাইন করতে সাহায্য করে।
+
 
  * 
  * 
