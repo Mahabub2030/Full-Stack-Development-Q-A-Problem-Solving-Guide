@@ -264,11 +264,68 @@ element.style.color = "red";
 
 **বাস্তব উদাহরণ: var হলো পাড়ার ক্লাব (সবাই ব্যবহার করতে পারে), let হলো আপনার নিজের ঘর, আর const হলো আপনার জন্মতারিখ (যা বদলানো যায় না)।
 
-27.Hoisting কী?
 
-উত্তর: ডিক্লারেশনের আগে ভেরিয়েবল ব্যবহার করার ক্ষমতা। JS কম্পাইল করার সময় ডিক্লারেশনগুলোকে উপরে তুলে নেয়।
+## JavaScript Mastery Plan
+Day 1: The Foundation & Execution Context
+Focus on how JS actually runs. Understand that JS is single-threaded but non-blocking.
 
-বাস্তব উদাহরণ: ক্লাসে শিক্ষক আসার আগেই কোনো ছাত্রের হাত তুলে রাখা যে সে উত্তর জানে।
+Topics: Data types (primitive vs. reference), var/let/const, Hoisting, and the Execution Context.
+
+Interview Q: What is the difference between undefined and not defined?
+
+A: undefined is a placeholder for a variable that has been declared but not assigned a value. not defined is a ReferenceError thrown when the engine can't find the variable in the scope chain at all.
+
+Day 2: Scope & Closures
+This is where most beginners get tripped up. Master the "backpack" of variables.
+
+Topics: Lexical Scope, Scope Chain, and Closures.
+
+Interview Q: What is a Closure and give a practical use case?
+
+A: A closure is a function that remembers its outer variables even after the outer function has finished executing. Use cases include data privacy (private variables) and function factories.
+
+Day 3: The "this" Keyword & Prototypes
+Stop guessing what this refers to.
+
+Topics: this binding (Implicit, Explicit, New, Global), Prototypes, and Prototypal Inheritance.
+
+Interview Q: Explain the difference between .call(), .apply(), and .bind().
+
+A: All three change the context of this. .call() and .apply() invoke the function immediately (call takes comma-separated args, apply takes an array). .bind() returns a new function for later use.
+
+Day 4: Asynchronous JS (The Event Loop)
+This is the heart of modern JavaScript.
+
+Topics: Callbacks, Promises, async/await, and the Event Loop (Macro-tasks vs. Micro-tasks).
+
+Interview Q: What is the output of console.log(1); setTimeout(() => console.log(2), 0); Promise.resolve().then(() => console.log(3)); console.log(4);?
+
+A: 1, 4, 3, 2. Micro-tasks (Promises) execute before macro-tasks (setTimeout), even if the timeout is 0ms.
+
+Day 5: Modern ES6+ & Functional Concepts
+Write clean, professional code.
+
+Topics: Destructuring, Rest/Spread, Arrow functions (and how they handle this), Map/Filter/Reduce.
+
+Interview Q: How do arrow functions differ from regular functions regarding the this keyword?
+
+A: Arrow functions do not have their own this. They inherit this from the enclosing lexical scope.
+
+Day 6: DOM, Events & Performance
+How JS interacts with the browser.
+
+Topics: Event Bubbling vs. Capturing, Event Delegation, Debouncing, and Throttling.
+
+Interview Q: What is Event Delegation?
+
+A: It’s a technique where you attach a single event listener to a parent element to manage events for all its children, leveraging event bubbling. It saves memory and handles dynamic elements.
+
+Day 7: Design Patterns & Practice
+Topics: Module Pattern, Factory Pattern, Singleton, and solving 2-3 "Medium" LeetCode JS problems.
+
+Interview Q: What is the difference between Deep Copy and Shallow Copy?
+
+A: A shallow copy copies the top-level structure but keeps references to nested objects. A deep copy (like using structuredClone()) creates a completely independent duplicate of every level of the object
 
 ## .the fundations(1-25)
 1.JavaScript-এ Data Types কী কী?
