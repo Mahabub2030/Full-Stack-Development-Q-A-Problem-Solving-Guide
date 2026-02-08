@@ -47,7 +47,12 @@ Bn: বিভিন্ন স্ক্রিন সাইজের জন্য 
 En: A layout model for providing an easy way to align and distribute space among items in a container.
 Bn: এটি কন্টেইনারের ভেতর এলিমেন্টগুলোকে সহজে সাজাতে এবং অ্যালাইন করতে সাহায্য করে।
 
-
+#,Question & English Answer,Bengali Answer,Reality / Example
+11,What is a Model in Mongoose? A wrapper on the Schema that provides an interface to the database (CRUD).,মডেল কি? স্কিমার ওপর ভিত্তি করে তৈরি একটি ইন্টারফেস যা দিয়ে ডাটাবেজে কাজ করা হয়।,"const User = mongoose.model('User', userSchema);"
+12,What is Middleware (Hooks) in Mongoose? Functions which are passed control during execution of asynchronous functions.,Mongoose মিডলওয়্যার কি? ডাটা সেভ বা ডিলিট করার আগে বা পরে অটোমেটিক কোনো কাজ করার ফাংশন।,"Encrypting passwords using userSchema.pre('save', ...)."
+13,Explain Virtuals in Mongoose? Properties that you can get/set but are NOT persisted in the database.,ভার্চুয়ালস কি? এমন প্রপার্টি যা ডাটাবেজে সেভ হয় না কিন্তু কোডে ব্যবহারের সময় পাওয়া যায়।,Combining firstName and lastName into a fullName.
+14,"What is Validation in Mongoose? Rules defined in the Schema to ensure data quality (e.g., required, min).",ভ্যালিডেশন কি? ডাটা সেভ করার আগে সেটি সঠিক কি না তা যাচাই করার নিয়ম।,"email: { type: String, required: true }."
+15,Difference between .find() and .findOne()? find returns an array of all matches; findOne returns only the first object.,find বনাম findOne? find সব ম্যাচিং ডাটা (অ্যারে) দেয়; findOne শুধু প্রথমটি দেয়।,Use findOne for login or specific profile viewing.
  * 
  * 
  * 
