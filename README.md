@@ -41,6 +41,114 @@ function Button() {
   return <button>Click</button>;
 }
 
+--------------------------------------
+🔹 4. What is JSX?
+Ans:JSX allows writing HTML inside JavaScript.
+
+⚙️ Why it works?
+Ans:Babel converts JSX → JavaScript.
+
+--------------------------------------
+🔹 5. What is Virtual DOM?
+Ans:Virtual DOM is a lightweight copy of real DOM.
+
+🧠 Why need it?
+Ans:DOM manipulation is slow.
+
+⚙️ Why it works?
+Ans:React compares old vs new Virtual DOM (diffing).
+
+🐢 When slow?
+Ans:If large tree updates frequently.
+🚀 Fix:
+Ans:Split components, use memoization.
+
+
+-------------------------------
+🔹 6. What is State?
+Ans:State is data that changes inside component.
+
+const [count, setCount] = useState(0);
+
+🧠 Why need it?
+To update UI dynamically.
+------------------------------
+🔹 7. What are Props?
+Ans:Props pass data from parent to child.
+
+<Child name="Mahabub" />
+-------------------------------
+🔹 8. Difference between State & Props?
+
+* State            ||	Props
+* Mutable          || 	Immutable
+* Inside component ||	Passed from parent
+
+----------------------------------
+🔹 9. What is useEffect?
+Ans:Hook for side effects (API, timer).
+
+useEffect(() => {
+  fetchData();
+}, []);
+
+🐢 When slow?
+If dependency array wrong.
+🚀 Fix:
+Correct dependency array.
+
+--------------------------------
+
+🔹 10. What is useRef?
+Ans:Used to access DOM directly.
+
+-------------------------------
+🔹 11. What is Conditional Rendering?
+ Ans: {isLogin ? <Dashboard /> : <Login />}
+        Used to show UI based on condition.
+
+-------------------------------
+🔹 12. What is List Rendering?
+Ans:items.map(item => <li>{item}</li>)
+     Need unique key.
+
+------------------------------
+🔹 13. Why Key is Important?
+Ans:Helps React identify changed items.
+
+-------------------------------
+🔹 14. What is React.memo?
+Ans:Prevents unnecessary re-render.
+
+🐢 When slow?
+Parent re-renders child unnecessarily.
+🚀 Fix:
+Wrap component with React.memo()
+
+--------------------------------
+
+🔹 15. What is useMemo?
+Optimizes heavy calculations.
+const value = useMemo(() => calculate(), []);
+
+------------------------------------
+🚀 When React Website Becomes Slow?
+- Too many re-renders
+- Large component tree
+- No lazy loading
+- Large images
+- Heavy calculations
+- No code splitting
+
+🔥 How to Fix Slow React Website?
+✅ Use React.memo
+✅ Use useMemo & useCallback
+✅ Lazy loading (React.lazy)
+✅ Code splitting
+✅ Optimize images
+✅ Use pagination
+✅ Avoid anonymous functions in props
+✅ Use production build
 
 
 
