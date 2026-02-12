@@ -30,9 +30,16 @@ Ans:Use React.memo, useMemo, useCallback.
 
 --------------------------------------
 3.What is Component?
-Ans:A resusable piec of UI.
+Ans:A resusable piec of UI block.
+🧠 Why need it?
+Ans:Code reuse & clean structure.
 
+🌍 Real Example:
+Navbar, Footer, Button.
 
+function Button() {
+  return <button>Click</button>;
+}
 
 
 
