@@ -476,6 +476,20 @@ Ans:Optimized version of React app.
 -Lazy loading images
 
 
+======================== Expert Level==================
 
+51. How to Structure a Large React Project?
 
+Ans:Use feature-based folder structure.
+
+src/
+ ├── features/
+ │    ├── auth/
+ │    ├── dashboard/
+ ├── components/
+ ├── hooks/
+ ├── utils/
+
+🧠 Why need?
+Scalability & maintainability.
 ```
