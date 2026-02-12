@@ -227,4 +227,90 @@ Ans:Split bundle into smaller chunks.
 🧠 Why need?
 - Reduce initial load time.
 
+----------------------------------
+🔹 23. What is Lazy Loading?
+Ans:Loads component only when needed.
+🧠 Real Example:
+- Admin panel loads only when admin clicks.
+---------------------------------------
+🔹 24. What is Suspense?
+Ans:Fallback UI while lazy loading.
+<Suspense fallback={<Loading />} />
+---------------------------------------
+🔹 25. What is Controlled Component?
+Ans:Form input controlled by React state.
+-<input value={name} onChange={...} />
+
+--------------------------------------
+🔹 26. What is Uncontrolled Component?
+Ans:Uses ref instead of state.
+-const ref = useRef();
+
+--------------------------------------
+
+🔹 27. What is Lifting State Up?
+Ans:Move state to common parent.
+🧠 Why need?
+When two components need same data.
+
+--------------------------------------
+🔹 28. What is Error Boundary?
+Ans:Catches JavaScript errors in component tree.
+-class ErrorBoundary extends React.Component {}
+🧠 Why need?
+-Prevent whole app crash.
+
+---------------------------------------
+🔹 29. What is useReducer?
+Ans:Alternative to useState for complex logic.
+const [state, dispatch] = useReducer(reducer, initialState);
+🧠 Real Example:
+Shopping cart system.
+
+------------------------------------------
+🔹 30. When React App Becomes Slow (Intermediate Level)?
+
+Common Reasons:
+*Large Context re-render
+*No memoization
+*Huge API response
+*No pagination
+*Re-rendering big list
+*Inline functions
+*Repeated calculations
+
+---------------------------------------
+🚀 Advanced Fix Strategy
+1️⃣ Memoization
+-React.memo
+-useMemo
+-useCallback
+2️⃣ List Optimization
+-Pagination
+-Virtualization (react-window)
+3️⃣ Reduce Bundle Size
+-Code splitting
+-Remove unused libraries
+4️⃣ Avoid Re-renders
+-Check with React DevTools Profiler
+
+------------------💎 Interview Level Question--------------
+Q: Why React faster than traditional DOM?
+Answer:
+Because React updates Virtual DOM first, compares changes, then updates only necessary real DOM parts.
+
+
+======================== Advanced Level =====================
+
+🔹 31. What is Concurrent Rendering (React 18)?
+Ans:Concurrent Rendering allows React to prepare multiple UI versions without blocking the main thread.
+
+🧠 Why need it?
+Ans:To keep UI responsive during heavy rendering.
+🌍 Real Example:
+Ans:Typing in search while large list updates — UI stays smooth.
+
+----------------------------------------------
+
+
 ```
