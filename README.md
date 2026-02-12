@@ -311,6 +311,171 @@ Ans:To keep UI responsive during heavy rendering.
 Ans:Typing in search while large list updates — UI stays smooth.
 
 ----------------------------------------------
+🔹 32. What is StrictMode?
+Ans:A development tool to detect potential problems.
+<React.StrictMode>
+  <App />
+</React.StrictMode>
+
+🧠 Why need?
+Detect unsafe lifecycle & side effects.
+
+--------------------------------------------------
+🔹 33. What is Hydration?
+Ans:Attaching React events to server-rendered HTML.
+
+🧠 Used in:
+Next.js (SSR)
+
+---------------------------------------------------
+🔹 34. What is SSR (Server Side Rendering)?
+Ans:HTML is generated on server.
+🧠 Why need?
+SEO + faster first load.
+🐢 Problem:
+Server load increases.
+
+
+--------------------------------------------------
+🔹 35. What is CSR (Client Side Rendering)?
+Ans:Browser renders everything.
+
+🧠 Used in:
+Normal React App (CRA, Vite)
+
+-------------------------------------------------
+🔹 36. What is Re-render?
+
+Ans:Component runs again when state/props change.
+🐢 When slow?
+Large component tree.
+🚀 Fix:
+Split components + memoization.
+
+-------------------------------------------------
+
+🔹 37. What causes unnecessary re-render?
+
+-Parent re-render
+-New function reference
+-Object reference change
+🚀 Fix:
+-useCallback / useMemo
+
+------------------------------------------
+🔹 38. What is React Profiler?
+Ans: Tool to measure performance.
+🧠 Why need?
+- To detect slow components.
+
+-----------------------------------
+🔹 39. What is Memoization?
+Ans:Saving previous result to avoid recalculation.
+🧠 Real Example:
+- Heavy price calculation in e-commerce.
+
+----------------------------------------
+🔹 40. What is React Portal?
+Ans:Render component outside parent DOM hierarchy.
+ReactDOM.createPortal(child, document.body)
+
+🧠 Used for:
+Modal, Tooltip.
+
+-------------------------------------
+🔹 41. What is useTransition?
+Ans: Marks updates as non-urgent.
+
+-const [isPending, startTransition] = useTransition();
+
+----------------------------------------
+🔹 42. What is useDeferredValue?
+Ans: Delays updating value.
+
+🧠 Used for:
+-Search input optimization.
+
+-----------------------------------
+🔹 43. What is Batching?
+Ans:React groups multiple state updates into one render.
+.
+
+🧠 Why need?
+Improve performance.
+
+----------------------------------
+🔹 44. What is Tree Shaking?
+Ans:Removes unused code from bundle.
+
+🧠 Why need?
+- Reduce bundle size.
+
+---------------------------------
+🔹 45. What is Production Build?
+Ans:Optimized version of React app.
+  - npm run build
+ 🧠 Why faster?
+- Minified & optimized.
+
+---------------------------------
+🔹 46. Why Large Bundle Makes Website Slow?
+-More JS download
+-Parsing time high
+-Execution time high
+🚀 Fix:
+-Code splitting
+-Remove unused libraries
+-Dynamic import
+
+----------------------------
+🔹 47. How to Optimize Large Lists?
+**Problem:
+1000+ items rendering slow.
+🚀 Fix:
+--Use virtualization library:
+-react-window
+-react-virtualized
+
+-----------------------------------
+🔹 48. Why Avoid Inline Object in Props?
+❌ Bad:
+<Component style={{color:"red"}} />
+-Because new object every render → re-render child.
+
+---------------------------------------------
+🔹 49. How React Diff Algorithm Works?
+-Compare element type
+-Compare keys
+-Update changed nodes
+-Efficient O(n)
+
+-----------------------------------------------------
+🔹 50. Real Production Optimization Checklist 🔥
+✅ Reduce Re-renders
+
+-React.memo
+-useMemo
+-useCallback
+-----------------
+✅ Reduce Bundle Size
+-Lazy loading
+-Dynamic import
+-Remove unused packages
+
+----------------------
+✅ Optimize API
+
+-Pagination
+-Limit response size
+-Caching
+
+--------------------
+✅ Optimize Images
+
+-Use WebP
+-Lazy loading images
+
+
 
 
 ```
