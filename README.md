@@ -150,6 +150,7 @@ const value = useMemo(() => calculate(), []);
 ✅ Avoid anonymous functions in props
 ✅ Use production build
 
+         ===========================Intermediate Level===============
 
 
 ```
