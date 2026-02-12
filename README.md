@@ -152,5 +152,79 @@ const value = useMemo(() => calculate(), []);
 
          ===========================Intermediate Level===============
 
+🔹 16. What is Reconciliation?
+Ans:Reconciliation is React’s process of comparing old Virtual DOM with new Virtual DOM.
+
+🧠 Why need it?
+To update only changed elements instead of full DOM.
+
+⚙️ Why it works?
+- Uses Diff Algorithm (O(n)).
+🐢 When slow?
+Large list without proper keys.
+🚀 Fix:
+Use unique stable keys (id, not index).
+
+------------------------------------
+🔹 17. What is React Fiber?
+Ans:Fiber is the new reconciliation engine (React 16+).
+
+🧠 Why need it?
+Ans:To make UI rendering interruptible and smooth.
+⚙️ Why it works?
+Ans: Breaks rendering work into small chunks.
+🌍 Real Example:
+Ans: While scrolling Instagram, UI doesn't freeze.
+
+----------------------------------------
+🔹 18. What is Context API?
+Ans:Context provides global state without prop drilling.
+const ThemeContext = createContext();
+
+🧠 Why need it?
+- For auth, theme, language.
+🐢 When slow?
+- Large context causes all consumers to re-render.
+🚀 Fix:
+- Split contexts.
+
+---------------------------------
+🔹 19. What is Prop Drilling?
+Ans:Passing props through many components.
+
+🧠 Why bad?
+- Hard to manage & maintain.
+🚀 Fix:
+- Context API / Redux.
+
+-------------------------
+🔹 20. What is Custom Hook?
+Ans:Reusable logic using hooks.
+
+Reusable hook logic।
+function useFetch(url) {
+  const [data, setData] = useState(null);
+}
+
+🧠 Why need?
+- Avoid duplicate logic.
+
+------------------------------
+🔹 21. What is useCallback?
+Ans:Memoizes function.
+const handleClick = useCallback(() => {}, []);
+
+🐢 When slow?
+Passing new function to child every render.
+🚀 Fix:
+Wrap with useCallback.
+
+------------------------------
+🔹 22. What is Code Splitting?
+Ans:Split bundle into smaller chunks.
+- const Dashboard = React.lazy(() => import('./Dashboard'));
+
+🧠 Why need?
+- Reduce initial load time.
 
 ```
